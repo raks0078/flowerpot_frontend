@@ -5,6 +5,7 @@ body {
   position: relative;
   font-weight: bold;
   font-size: 15px;
+  overflow-x: hidden;
 }
 code {
   font-family: 'Sunflower', sans-serif;
@@ -15,4 +16,62 @@ a:hover{
 button{
   letter-spacing: 1px;
   outline: none;
+}
+.content-right{
+  margin-left: 275px;
+    margin-top: 20px;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 1px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #9DC88D;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #164A41;
+  border-radius: 0;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #164A41;
+}
+
+/*for-section-text-start-here*/
+
+::selection {
+  background: #164A41;
+  /* WebKit/Blink Browsers */
+  color: #fff;
+}
+
+::-webkit-selection {
+  background: #164A41;
+  color: #fff;
+}
+
+::-ms-selection {
+  background: #164A41;
+  color: #fff;
+}
+
+::-o-selection {
+  background: #164A41;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #164A41;
+  color: #fff;
 }

@@ -22,19 +22,11 @@ const App = () => {
       <StyledDiv>
         <Header theme={theme} />
         <Drawer themeToggler={handleThemeToggle} theme={theme} />
-        <Switch>
-          <div className="">
+        <div className="content-right">
+          <Switch>
             <Route exact path="/launchpad" component={() => <Launchpad theme={theme} />} />
-          </div>
-          {/* <Route exact path="/" component={() => (<DextBoard theme={theme} />)}/>
-            <Route exact path="/dextboard" component={() => (<DextBoard theme={theme} />)}/>
-            <Route exact path="/pool-explorer" component={() => (<PoolExplorer theme={theme} />)} />
-            <Route exact path="/big-swap-explorer" component={() => (<BigSwapExplorer theme={theme} />)} />
-            <Route exact path="/multiswap" component={() => (<MultiSwap theme={theme} />)} />
-            <Route exact path="/user-account" component={() => (<UserAccount theme={theme} />)} />
-            <Route exact path="/pair-explorer" component={() => (<PairExplorer theme={theme} />)} />
-            <Route exact path="/configuration" component={() => (<Configuration theme={theme} />)} /> */}
-        </Switch>
+          </Switch>
+        </div>
         {/* <Footer /> */}
       </StyledDiv>
     </ThemeProvider>

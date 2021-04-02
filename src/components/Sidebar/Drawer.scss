@@ -1,9 +1,11 @@
 .drawer{
-    height: calc(100vh - 60px);
+    height: calc(100% - 60px);
     transition: transform .2s ease-in-out,width .2s ease-in-out;
     width: 250px;
-    padding: 15px 0;
+    padding: 10px 0 0;
     box-shadow: 0 7px 5px rgba(22, 74, 65, .5);
+    float: left;
+    min-height: calc(100vh - 60px);
 
     ul{
         padding: 0;
@@ -17,17 +19,77 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                min-height: 40px;
+                height: 50px;
+                padding: 0 15px;
+                transition: all ease .5s;
+                border-left: 3px solid transparent;
+
+                span{
+                    display: flex;
+                    align-items: center;
+
+                    svg{
+                        width: 22px;
+                        margin-right: 10px;
+                        margin-top: -2px;
+                        transform: none !important;
+
+                        path{
+                            fill: #164A41;
+                        }
+                    }
+                }
+
+                svg{
+                    font-size: 22px;
+                }
+            }
+            a[aria-expanded="true"]{
+                svg{
+                    transform: rotate(180deg);
+                    transition: all ease .5s;
+                }
+            }
+            a[aria-expanded="false"]{
+                svg{
+                    transform: rotate(0deg);
+                    transition: all ease .5s;
+                }
             }
         }
-        .collapse{
+        li.active{
+            border-left: 3px solid #C3D55F;
+        }
+        li:last-child{
+            .collapse, 
+            .collapsing{
+                margin-bottom: 0;
+            }
+        }
+        .collapse, 
+        .collapsing{
+            background-color: rgb(22, 74, 65);
+            transition: all ease .5s;
+            margin-top: 5px;
+            margin-bottom: 5px;
+
             ul{
                 li{
                     a{
-                        min-height: 30px;
+                        height: 40px;
+                        padding-left: 40px;
+                    }
+                    a:hover, 
+                    a.active{
+                        background-color: #4D774E;
+                        color: #C3D55F;
+                        padding-left: 45px;
                     }
                 }
             }
+        }
+        .show{
+            transition: all ease .5s;
         }
     }
 }

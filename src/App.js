@@ -10,7 +10,7 @@ const StyledDiv = styled.div`
 `
 
 const App = () => {
-  const [theme, setTheme] = useState("dark")
+  const [theme, setTheme] = useState("light")
 
   const handleThemeToggle = () => {
     theme === "light" ? setTheme("dark") : setTheme("light")
@@ -21,7 +21,11 @@ const App = () => {
       <StyledDiv>
         <Header theme={theme} />
         <Drawer themeToggler={handleThemeToggle} theme={theme} />
-        <Switch>{/* <Route exact path="/" component={() => (<DextBoard theme={theme} />)}/>
+        <Switch>
+          <div className="">
+            
+          </div>
+          {/* <Route exact path="/" component={() => (<DextBoard theme={theme} />)}/>
             <Route exact path="/dextboard" component={() => (<DextBoard theme={theme} />)}/>
             <Route exact path="/pool-explorer" component={() => (<PoolExplorer theme={theme} />)} />
             <Route exact path="/big-swap-explorer" component={() => (<BigSwapExplorer theme={theme} />)} />

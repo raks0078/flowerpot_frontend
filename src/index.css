@@ -1,9 +1,18 @@
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Sunflower', sans-serif;
   padding: 0;
   position: relative;
+  font-weight: bold;
+  font-size: 15px;
 }
 code {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Sunflower', sans-serif;
+}
+a:hover{
+  text-decoration: none;
+}
+button{
+  letter-spacing: 1px;
+  outline: none;
 }

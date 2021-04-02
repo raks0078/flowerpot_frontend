@@ -4,6 +4,7 @@ import styled, { ThemeProvider } from "styled-components"
 import { lightTheme, darkTheme, GlobalStyle } from "./themes"
 import Drawer from "../src/components/Sidebar/Drawer"
 import Header from "../src/components/Header/Header"
+import Launchpad from "./pages/Launchpad"
 const StyledDiv = styled.div`
   color: ${(props) => props.theme.fontColor};
   background-color: ${(props) => props.theme.sidebarBgColor};
@@ -23,7 +24,7 @@ const App = () => {
         <Drawer themeToggler={handleThemeToggle} theme={theme} />
         <Switch>
           <div className="">
-            
+            <Route exact path="/launchpad" component={() => <Launchpad theme={theme} />} />
           </div>
           {/* <Route exact path="/" component={() => (<DextBoard theme={theme} />)}/>
             <Route exact path="/dextboard" component={() => (<DextBoard theme={theme} />)}/>
@@ -32,7 +33,8 @@ const App = () => {
             <Route exact path="/multiswap" component={() => (<MultiSwap theme={theme} />)} />
             <Route exact path="/user-account" component={() => (<UserAccount theme={theme} />)} />
             <Route exact path="/pair-explorer" component={() => (<PairExplorer theme={theme} />)} />
-            <Route exact path="/configuration" component={() => (<Configuration theme={theme} />)} /> */}</Switch>
+            <Route exact path="/configuration" component={() => (<Configuration theme={theme} />)} /> */}
+        </Switch>
         {/* <Footer /> */}
       </StyledDiv>
     </ThemeProvider>

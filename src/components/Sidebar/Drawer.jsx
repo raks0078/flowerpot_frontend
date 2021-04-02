@@ -1,22 +1,20 @@
-import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
-import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
+import React, { Component } from "react"
+import { Link, NavLink } from "react-router-dom"
+import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown"
 import "./Drawer.scss"
 
 class Drawer extends Component {
-
-
   constructor(props) {
     super(props)
-  
+
     this.state = {
-       islight: false,
-       dummy:null
+      islight: false,
+      dummy: null,
     }
   }
-  
+
   render() {
-    const {islight} = this.state;
+    const { islight } = this.state
     return (
       <>
         <aside className="drawer">
@@ -30,7 +28,9 @@ class Drawer extends Component {
                 <div class="collapse" id="dashboard-options">
                   <ul>
                     <li>
-                      <a href="javascript:void(0)">Launchpad</a>
+                      <NavLink activeClassName="active" to="/launchpad">
+                        Launchpad
+                      </NavLink>
                     </li>
                     <li>
                       <a href="javascript:void(0)">Launch Request</a>
@@ -50,7 +50,7 @@ class Drawer extends Component {
               </li> */}
             </ul>
           </div>
-         </aside>
+        </aside>
       </>
     )
   }

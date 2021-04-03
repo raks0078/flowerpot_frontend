@@ -18,8 +18,10 @@ button{
   outline: none;
 }
 .content-right{
-  margin-left: 30px;
+  padding-left: 30px;
   margin-top: 20px;
+  width: 100%;
+  padding-right: 30px;
 }
 
 /* width */
@@ -74,4 +76,16 @@ button{
 ::-moz-selection {
   background: #164A41;
   color: #fff;
+}
+
+::-webkit-input-placeholder{
+  color: #C3D55F !important;
+}
+
+:-ms-input-placeholder{
+  color: #C3D55F !important;
+}
+
+::placeholder {
+  color: #C3D55F !important;
 }

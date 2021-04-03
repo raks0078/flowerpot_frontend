@@ -1,0 +1,61 @@
+.launchreq-img{
+    img{
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        right: -130px;
+        z-index: -1;
+    }
+}
+.launchreq-content{
+    h1{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+    form{
+        margin: 2rem 0;
+
+        .form-group{
+            display: flex;
+            margin-bottom: 1.2rem;
+
+            .form-control{
+                border-radius: 20px;
+                background-color: #4D774E;
+                border-color: #4D774E;
+                color: #C3D55F;
+                padding: 15px;
+                font-size: 15px;
+                height: 45px;
+                width: 100%;
+                box-shadow: none;
+                margin-right: 1rem;
+            }
+            .form-control:last-child{
+                margin-right: 0;
+            }
+            textarea.form-control{
+                height: auto;
+            }
+            button{
+                background-color: #C3D55F;
+                color: #4D774E;
+                height: 45px;
+                min-width: 100px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 100px;
+                border: 1px solid #C3D55F;
+                padding: 0 15px;
+                line-height: 45px;
+                text-transform: uppercase;
+                font-size: 13px;
+                width: 100%;
+            }
+            button:hover{
+                background-color: #bdd056;
+            }
+        }
+    }
+}

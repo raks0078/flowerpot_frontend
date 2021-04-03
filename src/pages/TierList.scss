@@ -1,0 +1,125 @@
+.tierlist-img{
+    img{
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        right: -130px;
+        z-index: -1;
+    }
+}
+.tierlist-content{
+    h1{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+    .card-wrap{
+        display: flex;
+    
+        .card{
+            border-radius: 20px;
+            background-color: #4D774E;
+            border-color: #4D774E;
+            padding: 15px;
+            margin-right: 20px;
+            width: 100%;
+            color: #C3D55F;
+            margin-bottom: 2rem;
+
+            .card-head{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                h5{
+                    margin: 0;
+                    font-weight: bold;
+                }
+            }
+            .card-body{
+                padding: 1rem 0;
+                border-top: 1px solid rgba(195, 213, 95, 0.1);
+                margin-top: 1rem;
+                text-align: center;
+
+                p{
+                    display: flex;
+                    justify-content: center;
+                    text-align: center;
+
+                    span{
+                        color: #164A41;
+                    }
+                }
+                span{
+                    animation: glow-data-v-65c4ff52 1s ease-in-out infinite alternate;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100px;
+                    background-color: #C3D55F;
+                    color: #4D774E;
+                    line-height: 25px;
+                    height: 35px;
+                    min-width: 125px;
+                    margin-bottom: 1.5rem;
+                }
+                .table-wrap{
+                    .content{
+                        padding: 7px 0;
+                        display: flex;
+                        font-size: 14px;
+                        flex-direction: column;
+                        align-items: center;
+
+                        span{
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 100px;
+                            background-color: transparent;
+                            color: #C3D55F;
+                            line-height: 25px;
+                            height: 35px;
+                            min-width: 100px;
+                            margin-bottom: .3rem;
+                            animation: none;
+                            margin-top: .5rem;
+                            width: 125px;
+                            border: 1px solid #C3D55F;
+                        }
+                    }
+                }
+            }
+            .card-foot{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                border-top: 1px solid rgba(195, 213, 95, 0.1);
+                padding: 1rem 0 .5rem;
+
+                span{
+                    background-color: #C3D55F;
+                    color: #4D774E;
+                    height: 35px;
+                    min-width: 125px;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100px;
+                    border: 1px solid #C3D55F;
+                    padding: 0 15px;
+                    line-height: 35px;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    margin-top: .5rem;
+                    text-align: center;
+                }
+            }
+        }
+        .card:last-child{ 
+            margin-right: 0;
+        }
+    }
+}
+@keyframes glow-data-v-65c4ff52{0%{box-shadow:0 0 5px #fff,-1px 0 8px #C3D55F,1px 0 8px #C3D55F}to{box-shadow:0 0 10px #fff,-2px 0 16px #C3D55F,2px 0 16px #C3D55F}}

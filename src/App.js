@@ -30,10 +30,10 @@ const App = () => {
       <GlobalStyle />
       <StyledDiv>
         <Header theme={theme} />
-        <div className="d-flex">
+        <div className="d-flex main-content">
           <Drawer themeToggler={handleThemeToggle} theme={theme} />
-          <div className="content-right">
             <Switch>
+              <div className="content-right">
               <Route exact path="/launchpad" component={() => <Launchpad theme={theme} />} />
               <Route exact path="/pools" component={() => <Pools theme={theme} />} />
               <Route exact path="/ifo" component={() => <Ifo theme={theme} />} />
@@ -43,8 +43,8 @@ const App = () => {
               <Route exact path="/tierlist" component={() => <TierList theme={theme} />} />
               <Route exact path="/exchange" component={() => <Exchange theme={theme} />} />
               <Route exact path="/launchreq" component={() => <LaunchReq theme={theme} />} />
+              </div>
             </Switch>
-          </div>
         </div>
       </StyledDiv>
     </ThemeProvider>

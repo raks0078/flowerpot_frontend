@@ -20,8 +20,8 @@ button{
 .content-right{
   padding-left: 30px;
   margin-top: 20px;
-  width: 100%;
   padding-right: 30px;
+  width: calc(100% - 250px);
 }
 
 /* width */
@@ -88,4 +88,7 @@ button{
 
 ::placeholder {
   color: #C3D55F !important;
+}
+.main-content{
+  min-height: calc(100vh - 60px);
 }

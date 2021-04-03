@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import stageOne from "../images/stage-1.png"
-import flower from "../images/flower.png"
 import "./TierList.scss"
 class TierList extends Component {
   render() {

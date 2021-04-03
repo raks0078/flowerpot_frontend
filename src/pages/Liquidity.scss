@@ -1,0 +1,117 @@
+.liquidity-img{
+    img{
+        position: fixed;
+        top: 0;
+        height: 100vh;
+        right: -130px;
+        z-index: -1;
+    }
+}
+.liquidity-content{
+    h1{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+    }
+    .card{
+        border-radius: 20px;
+        background-color: #4D774E;
+        border-color: #4D774E;
+        padding: 15px;
+        margin-right: 20px;
+        width: 436px;
+        color: #C3D55F;
+        margin-bottom: 2rem;
+
+        .card-head{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(195, 213, 95, 0.1);
+            padding-bottom: 1rem;
+
+            .card-head-left{
+                display: flex;
+                flex-direction: column;
+
+                h5{
+                    margin-right: 20px;
+                    font-weight: bold;
+                }
+                button{
+                    background-color: #C3D55F;
+                    color: #4D774E;
+                    height: 45px;
+                    min-width: 100px;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100px;
+                    border: 1px solid #C3D55F;
+                    padding: 0 15px;
+                    line-height: 45px;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    margin-top: 15px;
+                }
+                button:hover{
+                    background-color: #bdd056;
+                }
+            }
+            .card-head-right{
+                button{
+                    background-color: transparent;
+                    border: none;
+
+                    svg{
+                        path{
+                            fill: #C3D55F;
+                        }
+                    }
+                }
+            }
+        }
+        .card-body{
+            padding: 1.5rem 0 0;
+
+            .liquidity{
+                display: flex;
+                justify-content: space-between;
+
+                svg{
+                    color: #C3D55F;
+                }
+            }
+            .opac-text{
+                opacity: .3;
+                margin: 40px 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            button{
+                width: 32px;
+                background-color: #C3D55F;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                border-radius: 50%;
+                height: 32px;
+                margin: 1rem auto;
+            }
+            small{
+                font-size: 14px;
+                display: flex;
+                margin: 1rem 0;
+
+                a{
+                    color: #C3D55F;
+                    padding-left: 3px;
+                }
+            }
+            small:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

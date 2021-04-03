@@ -30,29 +30,21 @@ const App = () => {
       <GlobalStyle />
       <StyledDiv>
         <Header theme={theme} />
-<<<<<<< HEAD
         <div className="d-flex">
           <Drawer themeToggler={handleThemeToggle} theme={theme} />
           <div className="content-right">
             <Switch>
               <Route exact path="/launchpad" component={() => <Launchpad theme={theme} />} />
+              <Route exact path="/pools" component={() => <Pools theme={theme} />} />
+              <Route exact path="/ifo" component={() => <Ifo theme={theme} />} />
+              <Route exact path="/liqudity" component={() => <Liquidity theme={theme} />} />
+              <Route exact path="/nftc" component={() => <Nftc theme={theme} />} />
+              <Route exact path="/farms" component={() => <Farms theme={theme} />} />
+              <Route exact path="/tierlist" component={() => <TierList theme={theme} />} />
+              <Route exact path="/exchange" component={() => <Exchange theme={theme} />} />
+              <Route exact path="/launchreq" component={() => <LaunchReq theme={theme} />} />
             </Switch>
           </div>
-=======
-        <Drawer themeToggler={handleThemeToggle} theme={theme} />
-        <div className="content-right">
-          <Switch>
-            <Route exact path="/launchpad" component={() => <Launchpad theme={theme} />} />
-            <Route exact path="/pools" component={() => <Pools theme={theme} />} />
-            <Route exact path="/ifo" component={() => <Ifo theme={theme} />} />
-            <Route exact path="/liqudity" component={() => <Liquidity theme={theme} />} />
-            <Route exact path="/nftc" component={() => <Nftc theme={theme} />} />
-            <Route exact path="/farms" component={() => <Farms theme={theme} />} />
-            <Route exact path="/tierlist" component={() => <TierList theme={theme} />} />
-            <Route exact path="/exchange" component={() => <Exchange theme={theme} />} />
-            <Route exact path="/launchreq" component={() => <LaunchReq theme={theme} />} />
-          </Switch>
->>>>>>> d393c1a47e47b52ab3735c14dfdecf9c75915627
         </div>
       </StyledDiv>
     </ThemeProvider>

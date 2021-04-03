@@ -21,11 +21,13 @@ const App = () => {
       <GlobalStyle />
       <StyledDiv>
         <Header theme={theme} />
-        <Drawer themeToggler={handleThemeToggle} theme={theme} />
-        <div className="content-right">
-          <Switch>
-            <Route exact path="/launchpad" component={() => <Launchpad theme={theme} />} />
-          </Switch>
+        <div className="d-flex">
+          <Drawer themeToggler={handleThemeToggle} theme={theme} />
+          <div className="content-right">
+            <Switch>
+              <Route exact path="/launchpad" component={() => <Launchpad theme={theme} />} />
+            </Switch>
+          </div>
         </div>
         {/* <Footer /> */}
       </StyledDiv>

@@ -1,11 +1,10 @@
 .drawer{
-    height: calc(100% - 60px);
     transition: transform .2s ease-in-out,width .2s ease-in-out;
     width: 250px;
     padding: 10px 0 0;
     box-shadow: 0 7px 5px rgba(22, 74, 65, .5);
     float: left;
-    min-height: calc(100vh - 60px);
+    min-height: 100vh;
 
     ul{
         padding: 0;

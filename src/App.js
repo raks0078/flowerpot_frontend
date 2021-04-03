@@ -12,7 +12,7 @@ import Nftc from "./pages/Nftc"
 import Farms from "./pages/Farms"
 import TierList from "./pages/TierList"
 import Exchange from "./pages/Exchange"
-
+import LaunchReq from "./pages/LaunchReq"
 
 const StyledDiv = styled.div`
   color: ${(props) => props.theme.fontColor};
@@ -39,9 +39,9 @@ const App = () => {
             <Route exact path="/liqudity" component={() => <Liquidity theme={theme} />} />
             <Route exact path="/nftc" component={() => <Nftc theme={theme} />} />
             <Route exact path="/farms" component={() => <Farms theme={theme} />} />
-            <Route exact path="/tierList" component={() => <TierList theme={theme} />} />
+            <Route exact path="/tierlist" component={() => <TierList theme={theme} />} />
             <Route exact path="/exchange" component={() => <Exchange theme={theme} />} />
-      
+            <Route exact path="/launchreq" component={() => <LaunchReq theme={theme} />} />
           </Switch>
         </div>
       </StyledDiv>

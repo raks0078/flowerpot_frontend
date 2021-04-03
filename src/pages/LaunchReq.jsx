@@ -4,7 +4,7 @@ class LaunchReq extends Component {
   render() {
     return (
       <div>
-        
+        LAUNCHREQ
       </div>
     )
   }

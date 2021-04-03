@@ -35,10 +35,10 @@ class Drawer extends Component {
                       </NavLink>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Launch Request</a>
+                      <NavLink activeClassName="active" to="/launchreq">Launch Request</NavLink>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Tierlist</a>
+                      <NavLink activeClassName="active" to="/tierlist">Tierlist</NavLink>
                     </li>
                   </ul>
                 </div>

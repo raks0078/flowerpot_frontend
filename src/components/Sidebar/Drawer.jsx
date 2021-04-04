@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import { Link, NavLink } from "react-router-dom"
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown"
 import flower from "../../images/flower.png"
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import "./Drawer.scss"
 
 class Drawer extends Component {
@@ -143,7 +144,7 @@ class Drawer extends Component {
               <li className="info">
                 <a href="javascript:void(0)">
                   <span>
-                    <img src={flower} />
+                    <AccountCircleIcon />
                   </span>
                   $15.835
                 </a>

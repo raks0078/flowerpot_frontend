@@ -79,15 +79,15 @@ button{
 }
 
 ::-webkit-input-placeholder{
-  color: #C3D55F !important;
+  color: #010415 !important;
 }
 
 :-ms-input-placeholder{
-  color: #C3D55F !important;
+  color: #010415 !important;
 }
 
 ::placeholder {
-  color: #C3D55F !important;
+  color: #010415 !important;
 }
 .main-content{
   min-height: calc(100vh - 60px);

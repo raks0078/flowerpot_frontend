@@ -1,7 +1,7 @@
 .launchpad-img{
     img{
         position: fixed;
-        top: 0;
+        top: 70px;
         height: 100vh;
         right: -130px;
         z-index: -1;
@@ -12,6 +12,7 @@
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 1.5rem;
+        color: #010415;
     }
     .card-wrap{
         display: flex;
@@ -19,26 +20,31 @@
     
         .card{
             border-radius: 20px;
-            background-color: #4D774E;
-            border-color: #4D774E;
+            background-color: #f1f1f1;
+            border-color: #f1f1f1;
             padding: 15px;
             margin-right: 20px;
             width: 335px;
-            color: #C3D55F;
+            color: #010415;
             margin-bottom: 2rem;
+            font-weight: normal;
 
             .card-head{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
 
-                img{
+                img, 
+                svg{
                     width: 35px;
+                    height: 35px;
+                    color: #4D774E;
                 }
                 h5{
                     margin: 0;
                     margin-right: 20px;
                     font-weight: bold;
+                    color: #4D774E;
                 }
                 span{
                     -webkit-animation: glow-data-v-65c4ff52 1s ease-in-out infinite alternate;
@@ -49,8 +55,8 @@
                     align-items: center;
                     justify-content: center;
                     border-radius: 50%;
-                    background-color: #C3D55F;
-                    color: #4D774E;
+                    background-color: #010415;
+                    color: #ffffff;
                     line-height: 25px;
                 }
             }
@@ -59,9 +65,8 @@
 
                 .progress-bar{
                     border-radius: 4px;
-                    opacity: 0.3;
-                    background-color: #c3d55f;
-                    color: #164A41;
+                    background-color: #ffffff;
+                    color: #4D774E;
                 }
                 small{
                     display: flex;
@@ -86,14 +91,14 @@
                 margin: 1rem 0;
 
                 button{
-                    background-color: #C3D55F;
-                    color: #4D774E;
+                    background-color: #4D774E;
+                    color: #9DC88D;
                     height: 45px;
                     min-width: 100px;
                     align-items: center;
                     justify-content: center;
                     border-radius: 100px;
-                    border: 1px solid #C3D55F;
+                    border: 1px solid #4D774E;
                     padding: 0 15px;
                     line-height: 45px;
                     text-transform: uppercase;
@@ -101,7 +106,7 @@
                     width: 100%;
                 }
                 button:hover{
-                    background-color: #bdd056;
+                    background-color: #1c584e;
                 }
             }
         }

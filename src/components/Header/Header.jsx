@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import logo from "../../images/logo.svg"
 import flower from "../../images/flower.png"
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import Header from "./Header.scss"
 
 class HeaderMian extends Component {
@@ -27,7 +28,7 @@ class HeaderMian extends Component {
           <div className="nav-right">
             <button>Connect</button>
             <a href="javascript:void(0)" className="profile">
-              <img src={flower} />
+              <AccountCircleIcon />
             </a>
           </div>
         </div>

@@ -1,7 +1,7 @@
 .launchreq-img{
     img{
         position: fixed;
-        top: 0;
+        top: 70px;
         height: 100vh;
         right: -130px;
         z-index: -1;
@@ -14,6 +14,10 @@
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 1.5rem;
+        color: #010415;
+    }
+    p{
+        color: #707070;
     }
     form{
         margin: 2rem 0;
@@ -24,9 +28,9 @@
 
             .form-control{
                 border-radius: 20px;
-                background-color: #4D774E;
-                border-color: #4D774E;
-                color: #C3D55F;
+                background-color: #f1f1f1;
+                border-color: #f1f1f1;
+                color: #010415;
                 padding: 15px;
                 font-size: 15px;
                 height: 45px;
@@ -41,14 +45,14 @@
                 height: auto;
             }
             button{
-                background-color: #C3D55F;
-                color: #4D774E;
+                background-color: #4D774E;
+                color: #9DC88D;
                 height: 45px;
                 min-width: 100px;
                 align-items: center;
                 justify-content: center;
                 border-radius: 100px;
-                border: 1px solid #C3D55F;
+                border: 1px solid #4D774E;
                 padding: 0 15px;
                 line-height: 45px;
                 text-transform: uppercase;
@@ -56,7 +60,7 @@
                 width: 100%;
             }
             button:hover{
-                background-color: #bdd056;
+                background-color: #1c584e;
             }
         }
     }

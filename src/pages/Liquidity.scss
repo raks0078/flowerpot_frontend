@@ -1,7 +1,7 @@
 .liquidity-img{
     img{
         position: fixed;
-        top: 0;
+        top: 70px;
         height: 100vh;
         right: -130px;
         z-index: -1;
@@ -12,15 +12,16 @@
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 1.5rem;
+        color: #010415;
     }
     .card{
         border-radius: 20px;
-        background-color: #4D774E;
-        border-color: #4D774E;
+        background-color: #f1f1f1;
+        border-color: #f1f1f1;
         padding: 15px;
         margin-right: 20px;
         width: 436px;
-        color: #C3D55F;
+        color: #010415;
         margin-bottom: 2rem;
         margin: auto;
         margin-right: 40%;
@@ -29,7 +30,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid rgba(195, 213, 95, 0.1);
+            border-bottom: 1px solid #ffffff;
             padding-bottom: 1rem;
 
             .card-head-left{
@@ -39,16 +40,17 @@
                 h5{
                     margin-right: 20px;
                     font-weight: bold;
+                    color: #4D774E;
                 }
                 button{
-                    background-color: #C3D55F;
-                    color: #4D774E;
+                    background-color: #4D774E;
+                    color: #9DC88D;
                     height: 45px;
                     min-width: 100px;
                     align-items: center;
                     justify-content: center;
                     border-radius: 100px;
-                    border: 1px solid #C3D55F;
+                    border: 1px solid #4D774E;
                     padding: 0 15px;
                     line-height: 45px;
                     text-transform: uppercase;
@@ -56,7 +58,7 @@
                     margin-top: 15px;
                 }
                 button:hover{
-                    background-color: #bdd056;
+                    background-color: #1c584e;
                 }
             }
             .card-head-right{
@@ -66,7 +68,7 @@
 
                     svg{
                         path{
-                            fill: #C3D55F;
+                            fill: #4D774E;
                         }
                     }
                 }
@@ -80,7 +82,7 @@
                 justify-content: space-between;
 
                 svg{
-                    color: #C3D55F;
+                    color: #010415;
                 }
             }
             .opac-text{
@@ -107,7 +109,7 @@
                 margin: 1rem 0;
 
                 a{
-                    color: #C3D55F;
+                    color: #4D774E;
                     padding-left: 3px;
                 }
             }

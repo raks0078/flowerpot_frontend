@@ -1,7 +1,7 @@
 .tierlist-img{
     img{
         position: fixed;
-        top: 0;
+        top: 70px;
         height: 100vh;
         right: -130px;
         z-index: -1;
@@ -12,6 +12,7 @@
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 1.5rem;
+        color: #010415;
     }
     .card-wrap{
         display: flex;
@@ -19,8 +20,8 @@
     
         .card{
             border-radius: 20px;
-            background-color: #4D774E;
-            border-color: #4D774E;
+            background-color: #f1f1f1;
+            border-color: #f1f1f1;
             padding: 15px;
             margin-right: 20px;
             width: 245px;
@@ -35,13 +36,15 @@
                 h5{
                     margin: 0;
                     font-weight: bold;
+                    color: #4D774E;
                 }
             }
             .card-body{
                 padding: 1rem 0;
-                border-top: 1px solid rgba(195, 213, 95, 0.1);
+                border-top: 1px solid #ffffff;
                 margin-top: 1rem;
                 text-align: center;
+                color: #010415;
 
                 p{
                     display: flex;
@@ -58,8 +61,8 @@
                     align-items: center;
                     justify-content: center;
                     border-radius: 100px;
-                    background-color: #C3D55F;
-                    color: #4D774E;
+                    background-color: #010415;
+                    color: #ffffff;
                     line-height: 25px;
                     height: 35px;
                     min-width: 125px;
@@ -78,8 +81,8 @@
                             align-items: center;
                             justify-content: center;
                             border-radius: 100px;
-                            background-color: transparent;
-                            color: #C3D55F;
+                            background-color: #ffffff;
+                            color: #4D774E;
                             line-height: 25px;
                             height: 35px;
                             min-width: 100px;
@@ -87,7 +90,7 @@
                             animation: none;
                             margin-top: .5rem;
                             width: 125px;
-                            border: 1px solid #C3D55F;
+                            border: 1px solid #ffffff;
                         }
                     }
                 }
@@ -97,18 +100,19 @@
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
-                border-top: 1px solid rgba(195, 213, 95, 0.1);
+                border-top: 1px solid #ffffff;
                 padding: 1rem 0 .5rem;
+                color: #4D774E;
 
                 span{
-                    background-color: #C3D55F;
-                    color: #4D774E;
+                    background-color: #4D774E;
+                    color: #9DC88D;
                     height: 35px;
                     min-width: 125px;
                     align-items: center;
                     justify-content: center;
                     border-radius: 100px;
-                    border: 1px solid #C3D55F;
+                    border: 1px solid #4D774E;
                     padding: 0 15px;
                     line-height: 35px;
                     text-transform: uppercase;

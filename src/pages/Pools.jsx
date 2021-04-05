@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import stageOne from "../images/stage-1.png"
 import flower from "../images/flower.png"
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown"
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import "./Pools.scss"
 class Pools extends Component {
   render() {
@@ -33,7 +34,7 @@ class Pools extends Component {
         <div className="card-wrap">
           <div className="card">
             <div className="card-head">
-              <img src={flower} />
+              <AccountCircleIcon />
               <div className="right">
                 <h5>CAKE Pool</h5>
                 <div className="d-flex justify-content-end">
@@ -82,7 +83,7 @@ class Pools extends Component {
           </div>
           <div className="card">
             <div className="card-head">
-              <img src={flower} />
+              <AccountCircleIcon />
               <div className="right">
                 <h5>NRV Pool</h5>
                 <div className="d-flex justify-content-end">
@@ -135,7 +136,7 @@ class Pools extends Component {
           </div>
           <div className="card">
             <div className="card-head">
-              <img src={flower} />
+              <AccountCircleIcon />
               <div className="right">
                 <h5>DEGO Pool</h5>
                 <div className="d-flex justify-content-end">

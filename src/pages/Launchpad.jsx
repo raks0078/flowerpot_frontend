@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import stageOne from "../images/stage-1.png"
 import flower from "../images/flower.png"
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import "./Launchpad.scss"
 class Launchpad extends Component {
   render() {
@@ -14,7 +15,7 @@ class Launchpad extends Component {
         <div className="card-wrap">
           <div className="card">
             <div className="card-head">
-              <img src={flower} />
+              <AccountCircleIcon />
               <h5>FlowerpotSwap</h5>
               <span>0</span>
             </div>
@@ -55,7 +56,7 @@ class Launchpad extends Component {
           </div>
           <div className="card">
             <div className="card-head">
-              <img src={flower} />
+              <AccountCircleIcon />
               <h5>FlowerpotSwap</h5>
               <span>0</span>
             </div>

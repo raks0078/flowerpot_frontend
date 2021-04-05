@@ -1,7 +1,7 @@
 .farms-img{
     img{
         position: fixed;
-        top: 0;
+        top: 70px;
         height: 100vh;
         right: -130px;
         z-index: -1;
@@ -14,10 +14,12 @@
         margin-bottom: 1.5rem;
         display: flex;
         flex-direction: column;
+        color: #000000;
 
         small{
             font-size: 17px;
             padding-top: 7px;
+            color: #707070;
         }
     }
     .tool-wrap{
@@ -28,6 +30,8 @@
         padding: 15px;
         margin-bottom: 1.5rem;
         height: 107px;
+        color: #000000;
+        font-weight: normal;
 
         .tool-left{
             button{
@@ -35,17 +39,11 @@
                 border: none;
                 height: 32px;
                 width: 32px;
-
-                svg{
-                    path{
-                        fill: #4D774E;
-                    }
-                }
             }
             button.active{
                 svg{
                     path{
-                        fill: #c3d55f;
+                        fill: #4D774E;
                     }
                 }
             }
@@ -61,9 +59,18 @@
                     position: relative;
                     margin-left: 0;
                     margin-right: 8px;
-                    background-color: #c3d55f;
-                    border-color: #c3d55f;
+                    background-color: #ffffff;
+                    border-color: #ffffff;
                     box-shadow: none;
+                    background-image: url(../images/toggle-icon.svg);
+                }
+                input:focus{
+                    background-image: url(../images/toggle-icon.svg);
+                }
+                input:checked{
+                    background-color: #4D774E;
+                    border-color: #4D774E;
+                    background-image: url(../images/toggle-icon-active.svg);
                 }
                 label{
                     margin-top: 2px;
@@ -71,20 +78,20 @@
                 }
             }
             .btn-group{
-                background-color: #c3d55f;
+                background-color: #ffffff;
                 margin-left: 1.5rem;
                 border-radius: 100px;
 
                 .btn{
                     min-width: 100px;
                     box-shadow: none;
-                    color: #4D774E;
+                    color: #707070;
                 }
                 .btn.active{
                     background-color: #4D774E;
                     border-radius: 100px;
                     color: #C3D55F;
-                    border: 1px solid #c3d55f;
+                    border: 3px solid #ffffff;
                 }
             }
         }
@@ -99,9 +106,9 @@
                 }
                 .form-control{
                     border-radius: 20px;
-                    background-color: #4D774E;
-                    border-color: #4D774E;
-                    color: #C3D55F;
+                    background-color: #ffffff;
+                    border-color: #ffffff;
+                    color: #000000;
                     padding: 0 15px;
                     font-size: 15px;
                     height: 38px;
@@ -123,12 +130,12 @@
     
         .card{
             border-radius: 20px;
-            background-color: #4D774E;
-            border-color: #4D774E;
+            background-color: #f1f1f1;
+            border-color: #f1f1f1;
             padding: 15px;
             margin-right: 20px;
             width: 335px;
-            color: #C3D55F;
+            color: #000000;
             margin-bottom: 2rem;
             display: inline-table;
 
@@ -137,13 +144,17 @@
                 align-items: center;
                 justify-content: space-between;
 
-                img{
+                img, 
+                svg{
                     width: 35px;
+                    height: 35px;
+                    color: #4D774E;
                 }
                 h5{
                     margin: 0;
                     font-weight: bold;
                     margin-bottom: 5px;
+                    color: #4D774E;
                 }
                 span{
                     min-width: 50px;
@@ -152,22 +163,23 @@
                     align-items: center;
                     justify-content: center;
                     border-radius: 100px;
-                    background-color: #C3D55F;
+                    background-color: #ffffff;
                     color: #4D774E;
                     line-height: 25px;
                     padding: 10px;
                     margin-left: 5px;
                 }
                 .core{
-                    background-color: transparent;
-                    color: #C3D55F;
-                    border: 1px solid #C3D55F;
+                    background-color: #ffffff;
+                    color: #4D774E;
+                    border: 1px solid #ffffff;
 
                     svg{
                         margin-right: 5px;
+                        width: 20px;
 
                         path{
-                            fill: #C3D55F;
+                            fill: #4D774E;
                         }
                     }
                 }
@@ -195,7 +207,7 @@
                             margin-right: 5px;
 
                             path{
-                                fill: #C3D55F;
+                                fill: #4D774E;
                             }
                         }
                     }
@@ -216,14 +228,14 @@
                         }
                         span{
                             button{
-                                background-color: #C3D55F;
-                                color: #4D774E;
+                                background-color: #4D774E;
+                                color: #C3D55F;
                                 height: 45px;
                                 min-width: 100px;
                                 align-items: center;
                                 justify-content: center;
                                 border-radius: 100px;
-                                border: 1px solid #C3D55F;
+                                border: 1px solid #4D774E;
                                 padding: 0 15px;
                                 line-height: 45px;
                                 text-transform: uppercase;
@@ -232,7 +244,8 @@
                                 cursor: not-allowed;
                             }
                             button:hover{
-                                background-color: #bdd056;
+                                background-color: #1c584e;
+                                border-color: #1c584e;
                             }
                         }
                     }
@@ -248,14 +261,14 @@
                 margin: .5rem 0 1rem;
 
                 button{
-                    background-color: #C3D55F;
-                    color: #4D774E;
+                    background-color: #4D774E;
+                    color: #C3D55F;
                     height: 45px;
                     min-width: 100px;
                     align-items: center;
                     justify-content: center;
                     border-radius: 100px;
-                    border: 1px solid #C3D55F;
+                    border: 1px solid #4D774E;
                     padding: 0 15px;
                     line-height: 45px;
                     text-transform: uppercase;
@@ -263,7 +276,8 @@
                     width: 100%;
                 }
                 button:hover{
-                    background-color: #bdd056;
+                    background-color: #1c584e;
+                    border-color: #1c584e;
                 }
             }
         }
@@ -280,7 +294,7 @@
             flex-direction: column;
 
             a{
-                color: #C3D55F;
+                color: #4D774E;
 
                 svg{
                     font-size: 17px;
@@ -321,7 +335,7 @@
                             margin-left: 5px;
 
                             path{
-                                fill: #C3D55F;
+                                fill: #4D774E;
                             }
                         }
                     }

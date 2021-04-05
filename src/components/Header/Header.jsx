@@ -7,6 +7,7 @@ import DialogContent from "@material-ui/core/DialogContent"
 import DialogContentText from "@material-ui/core/DialogContentText"
 import DialogTitle from "@material-ui/core/DialogTitle"
 import flower from "../../images/flower.png"
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import Header from "./Header.scss"
 
 
@@ -44,7 +45,7 @@ class HeaderMian extends Component {
           <div className="nav-right">
             <button onClick={()=>this.setState({isOpen:true})}>Connect</button>
             <a href="javascript:void(0)" className="profile">
-              <img src={flower} />
+              <AccountCircleIcon />
             </a>
           </div>
         </div>       

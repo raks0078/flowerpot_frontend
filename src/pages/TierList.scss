@@ -1,7 +1,7 @@
 .tierlist-img{
     img{
         position: fixed;
-        top: 0;
+        top: 70px;
         height: 100vh;
         right: -130px;
         z-index: -1;
@@ -19,12 +19,9 @@
     
         .card{
             border-radius: 20px;
-            background-color: #4D774E;
-            border-color: #4D774E;
             padding: 15px;
             margin-right: 20px;
             width: 245px;
-            color: #C3D55F;
             margin-bottom: 2rem;
 
             .card-head{
@@ -35,11 +32,12 @@
                 h5{
                     margin: 0;
                     font-weight: bold;
+                    color: #4D774E;
                 }
             }
             .card-body{
                 padding: 1rem 0;
-                border-top: 1px solid rgba(195, 213, 95, 0.1);
+                border-top: 1px solid;
                 margin-top: 1rem;
                 text-align: center;
 
@@ -58,8 +56,6 @@
                     align-items: center;
                     justify-content: center;
                     border-radius: 100px;
-                    background-color: #C3D55F;
-                    color: #4D774E;
                     line-height: 25px;
                     height: 35px;
                     min-width: 125px;
@@ -78,8 +74,7 @@
                             align-items: center;
                             justify-content: center;
                             border-radius: 100px;
-                            background-color: transparent;
-                            color: #C3D55F;
+                            color: #4D774E;
                             line-height: 25px;
                             height: 35px;
                             min-width: 100px;
@@ -87,7 +82,7 @@
                             animation: none;
                             margin-top: .5rem;
                             width: 125px;
-                            border: 1px solid #C3D55F;
+                            border: 1px solid;
                         }
                     }
                 }
@@ -99,16 +94,17 @@
                 align-items: center;
                 border-top: 1px solid rgba(195, 213, 95, 0.1);
                 padding: 1rem 0 .5rem;
+                color: #4D774E;
 
                 span{
-                    background-color: #C3D55F;
-                    color: #4D774E;
+                    background-color: #4D774E;
+                    color: #C3D55F;
                     height: 35px;
                     min-width: 125px;
                     align-items: center;
                     justify-content: center;
                     border-radius: 100px;
-                    border: 1px solid #C3D55F;
+                    border: 1px solid #4D774E;
                     padding: 0 15px;
                     line-height: 35px;
                     text-transform: uppercase;

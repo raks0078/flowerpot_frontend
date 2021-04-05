@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import stageOne from "../images/stage-1.png"
 import flower from "../images/flower.png"
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown"
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import "./Farms.scss"
 class Farms extends Component {
   render() {
@@ -51,7 +52,7 @@ class Farms extends Component {
         <div className="card-wrap">
           <div className="card">
             <div className="card-head">
-              <img src={flower} />
+              <AccountCircleIcon />
               <div className="right">
                 <h5>CAKE-BNB</h5>
                 <div className="d-flex">
@@ -118,7 +119,7 @@ class Farms extends Component {
           </div>
           <div className="card">
             <div className="card-head">
-              <img src={flower} />
+              <AccountCircleIcon />
               <div className="right">
                 <h5>NRV-BNB</h5>
                 <div className="d-flex">
@@ -185,7 +186,7 @@ class Farms extends Component {
           </div>
           <div className="card">
             <div className="card-head">
-              <img src={flower} />
+              <AccountCircleIcon />
               <div className="right">
                 <h5>DEGO-BNB</h5>
                 <div className="d-flex">

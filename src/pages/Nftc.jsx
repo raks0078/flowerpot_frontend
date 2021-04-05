@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import stageOne from "../images/stage-1.png"
 import flower from "../images/flower.png"
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown"
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import "./Nftc.scss"
 class Nftc extends Component {
   render() {
@@ -20,7 +21,7 @@ class Nftc extends Component {
               </div>
             </div>
             <div className="card-body">
-            <img src={flower} />
+            <AccountCircleIcon />
             </div>
             <div className="collapse-wrap">
               <a data-bs-toggle="collapse" href="#details-1" role="button" aria-expanded="false" aria-controls="details-1">
@@ -43,7 +44,7 @@ class Nftc extends Component {
               </div>
             </div>
             <div className="card-body">
-            <img src={flower} />
+            <AccountCircleIcon />
             </div>
             <div className="collapse-wrap">
               <a data-bs-toggle="collapse" href="#details-2" role="button" aria-expanded="false" aria-controls="details-2">
@@ -66,7 +67,7 @@ class Nftc extends Component {
               </div>
             </div>
             <div className="card-body">
-            <img src={flower} />
+            <AccountCircleIcon />
             </div>
             <div className="collapse-wrap">
               <a data-bs-toggle="collapse" href="#details-3" role="button" aria-expanded="false" aria-controls="details-3">

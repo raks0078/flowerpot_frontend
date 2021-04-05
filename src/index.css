@@ -77,18 +77,6 @@ button{
   background: #164A41;
   color: #fff;
 }
-
-::-webkit-input-placeholder{
-  color: #C3D55F !important;
-}
-
-:-ms-input-placeholder{
-  color: #C3D55F !important;
-}
-
-::placeholder {
-  color: #C3D55F !important;
-}
 .main-content{
   min-height: calc(100vh - 60px);
 }

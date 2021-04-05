@@ -1,7 +1,7 @@
 .collectible-img{
     img{
         position: fixed;
-        top: 0;
+        top: 70px;
         height: 100vh;
         right: -130px;
         z-index: -1;
@@ -14,6 +14,7 @@
         margin-bottom: 1.5rem;
         display: flex;
         flex-direction: column;
+        color: #000000;
 
         small{
             font-size: 17px;
@@ -32,12 +33,12 @@
     
         .card{
             border-radius: 20px;
-            background-color: #4D774E;
-            border-color: #4D774E;
+            background-color: #f1f1f1;
+            border-color: #f1f1f1;
             padding: 15px;
             margin-right: 20px;
             width: 335px;
-            color: #C3D55F;
+            color: #4D774E;
             margin-bottom: 2rem;
             display: inline-table;
 
@@ -67,10 +68,14 @@
                 justify-content: center;
                 align-items: center;
 
-                img{
+                img, 
+                svg{
                     max-width: 100%;
                     max-height: 100%;
                     object-fit: contain;
+                    width: 100%;
+                    height: 100%;
+                    color: #ffffff;
                 }
             }
             .card-foot{
@@ -112,7 +117,7 @@
             width: 100%;
 
             a{
-                color: #C3D55F;
+                color: #4D774E;
                 float: right;
 
                 svg{
@@ -164,6 +169,7 @@
                     margin: 0;
                     display: flex;
                     height: auto;
+                    color: #000000;
 
                     .content{
                         display: flex;

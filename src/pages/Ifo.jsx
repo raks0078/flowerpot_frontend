@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import stageOne from "../images/stage-1.png"
 import flower from "../images/flower.png"
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown"
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import "./Ifo.scss"
 class Ifo extends Component {
   render() {
@@ -25,10 +26,10 @@ class Ifo extends Component {
         <div className="card-wrap">
           <div className="card">
             <div className="card-banner">
-            <img src={flower} />
+            <AccountCircleIcon />
             </div>
             <div className="card-head">
-              <img src={flower} />
+              <AccountCircleIcon />
               <div className="right">
                 <h5>Belt (BELT)</h5>
                 <div className="d-flex">
@@ -110,12 +111,12 @@ class Ifo extends Component {
             <button>Read More</button>
           </div>
           <div className="img-wrap">
-            <img src={flower} />
+            <AccountCircleIcon />
           </div>
         </div>
         <div className="d-flex bottom-wrap last-bottom-wrap">
         <div className="img-wrap">
-            <img src={flower} />
+            <AccountCircleIcon />
           </div>
           <div className="content-wrap">
             <h1 className="mb-1p2">Want to launch your own IFO?</h1>

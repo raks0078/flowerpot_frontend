@@ -84,7 +84,11 @@ export const GlobalStyle = createGlobalStyle`
 .launchpad-content .card-wrap .card, 
 .tierlist-content .card-wrap .card, 
 .exchange-content .card, 
-.liquidity-content .card{
+.liquidity-content .card, 
+.farms-content .card-wrap .card, 
+.pools-content .card-wrap .card, 
+.collectible-content .card-wrap .card, 
+.ifo-content .card-wrap .card{
   background-color: ${(props) => props.theme.lightcolor};
   border-color: ${(props) => props.theme.lightcolor};
   color: ${(props) => props.theme.themetextcolor};
@@ -95,7 +99,13 @@ export const GlobalStyle = createGlobalStyle`
   color: ${(props) => props.theme.oppositecommoncolor};
 }
 .launchpad-content .card-wrap .card .card-body .table-wrap .content, 
-.tierlist-content .card-wrap .card .card-body{
+.tierlist-content .card-wrap .card .card-body, 
+.farms-content .card-wrap .card .card-body .table-wrap .content, 
+.farms-content .card-wrap .collapse-wrap, 
+.pools-content .card-wrap .card .card-body .table-wrap .content, 
+.pools-content .card-wrap .collapse-wrap, 
+.collectible-content .card-wrap .collapse-wrap, 
+.ifo-content .card-wrap .collapse-wrap{
   border-top-color: ${(props) => props.theme.borderlightcolor};
 }
 .launchreq-content form .form-group .form-control{
@@ -117,7 +127,10 @@ export const GlobalStyle = createGlobalStyle`
 .tierlist-content h1, 
 .exchange-content h1, 
 .liquidity-content h1, 
-.farms-content h1{
+.farms-content h1, 
+.pools-content h1, 
+.collectible-content h1, 
+.ifo-content h1{
   color: ${(props) => props.theme.commoncolor};
 }
 .exchange-content .card .card-head, 
@@ -125,7 +138,8 @@ export const GlobalStyle = createGlobalStyle`
   border-bottom-color: ${(props) => props.theme.borderlightcolor};
 }
 .launchpad-content .card-wrap .card .card-body .progress-bar, 
-.exchange-content .card .card-body .content{
+.exchange-content .card .card-body .content, 
+.ifo-content .card-wrap .card .card-banner{
   background-color: ${(props) => props.theme.body};
 }
 .tierlist-content .card-wrap .card .card-body .table-wrap .content span{
@@ -133,8 +147,40 @@ export const GlobalStyle = createGlobalStyle`
   border-color: ${(props) => props.theme.body};
 }
 .liquidity-content .card .card-body .liquidity svg, 
-.farms-content .tool-wrap{
+.farms-content .tool-wrap, 
+.pools-content .tool-wrap, 
+.collectible-content .card-wrap .collapse-wrap .collapse .card, 
+.collectible-content .card-wrap .collapse-wrap .collapsing .card{
   color: ${(props) => props.theme.themetextcolor};
+}
+.farms-content .tool-wrap .tool-left button svg path{
+  fill: ${(props) => props.theme.themetextcolor};
+}
+.farms-content .tool-wrap .tool-left .form-check input, 
+.pools-content .tool-wrap .tool-left .form-check input{
+  background-color: ${(props) => props.theme.themetextcolor};
+  border-color: ${(props) => props.theme.themetextcolor};
+}
+.farms-content .tool-wrap .tool-left .btn-group, 
+.pools-content .tool-wrap .tool-left .btn-group, 
+.ifo-content .tool-wrap .tool-left .btn-group{
+  background-color: ${(props) => props.theme.body};
+}
+.farms-content .tool-wrap .tool-left .btn-group .btn.active, 
+.pools-content .tool-wrap .tool-left .btn-group .btn.active, 
+.ifo-content .tool-wrap .tool-left .btn-group .btn.active{
+  border-color: ${(props) => props.theme.body};
+}
+.farms-content .tool-wrap .tool-right .form-group .form-control{
+  color: ${(props) => props.theme.themetextcolor};
+  background-color: ${(props) => props.theme.body};
+  border-color: ${(props) => props.theme.body};
+}
+.farms-content .card-wrap .card .card-head .core, 
+.farms-content .card-wrap .card .card-head span, 
+.pools-content .card-wrap .collapse-wrap .core{
+  background-color: ${(props) => props.theme.body};
+  border-color: ${(props) => props.theme.body};
 }
 
 `

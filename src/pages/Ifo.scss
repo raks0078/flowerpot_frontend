@@ -14,7 +14,6 @@
         margin-bottom: 1.5rem;
         display: flex;
         flex-direction: column;
-        color: #000000;
 
         small{
             font-size: 17px;
@@ -33,7 +32,6 @@
 
         .tool-left{
             .btn-group{
-                background-color: #ffffff;
                 margin-left: 1.5rem;
                 border-radius: 100px;
 
@@ -46,7 +44,7 @@
                     background-color: #4D774E;
                     border-radius: 100px;
                     color: #C3D55F;
-                    border: 3px solid #ffffff;
+                    border: 1px solid;
                 }
             }
         }
@@ -59,12 +57,9 @@
     
         .card{
             border-radius: 20px;
-            background-color: #f1f1f1;
-            border-color: #f1f1f1;
             padding: 15px;
             margin-right: 20px;
             width: 335px;
-            color: #000000;
             margin-bottom: 2rem;
             display: inline-table;
 
@@ -118,7 +113,6 @@
                 }
             }
             .card-banner{
-                background-color: #ffffff;
                 border-radius: 20px;
                 height: 150px;
                 padding: 15px;
@@ -142,7 +136,7 @@
             margin-right: 0;
         }
         .collapse-wrap{
-            border-top: 1px solid rgba(195, 213, 95, .1);
+            border-top: 1px solid;
             margin-top: 1rem;
             padding-top: 1rem;
             display: flex;

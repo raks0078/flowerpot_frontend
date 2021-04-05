@@ -14,7 +14,6 @@
         margin-bottom: 1.5rem;
         display: flex;
         flex-direction: column;
-        color: #000000;
 
         small{
             font-size: 17px;
@@ -36,7 +35,6 @@
         padding: 15px;
         margin-bottom: 1.5rem;
         height: 107px;
-        color: #000000;
 
         .tool-left{
             .form-check{
@@ -51,8 +49,6 @@
                     position: relative;
                     margin-left: 0;
                     margin-right: 8px;
-                    background-color: #ffffff;
-                    border-color: #ffffff;
                     box-shadow: none;
                     background-image: url(../images/toggle-icon.svg);
                 }
@@ -70,7 +66,6 @@
                 }
             }
             .btn-group{
-                background-color: #ffffff;
                 margin-left: 1.5rem;
                 border-radius: 100px;
 
@@ -83,7 +78,7 @@
                     background-color: #4D774E;
                     border-radius: 100px;
                     color: #C3D55F;
-                    border: 3px solid #ffffff;
+                    border: 1px solid;
                 }
             }
         }
@@ -94,12 +89,9 @@
     
         .card{
             border-radius: 20px;
-            background-color: #f1f1f1;
-            border-color: #f1f1f1;
             padding: 15px;
             margin-right: 20px;
             width: 335px;
-            color: #000000;
             margin-bottom: 2rem;
             display: inline-table;
 
@@ -148,7 +140,7 @@
 
                     .content{
                         padding: 7px 0;
-                        border-top: 1px solid rgba(195, 213, 95, .1);
+                        border-top: 1px solid;
                         display: flex;
                         justify-content: space-between;
                         font-size: 14px;
@@ -247,7 +239,7 @@
             margin-right: 0;
         }
         .collapse-wrap{
-            border-top: 1px solid rgba(195, 213, 95, .1);
+            border-top: 1px solid;
             margin-top: 1rem;
             padding-top: 1rem;
             display: inline-block;
@@ -277,9 +269,8 @@
                 }
             }
             .core{
-                background-color: #ffffff;
                 color: #4D774E;
-                border: 1px solid #ffffff;
+                border: 1px solid;
                 min-width: 50px;
                 height: 25px;
                 display: flex;
@@ -293,6 +284,7 @@
 
                 svg{
                     margin-right: 5px;
+                    width: 15px;
 
                     path{
                         fill: #4D774E;

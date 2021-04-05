@@ -14,7 +14,6 @@
         margin-bottom: 1.5rem;
         display: flex;
         flex-direction: column;
-        color: #000000;
 
         small{
             font-size: 17px;
@@ -33,12 +32,9 @@
     
         .card{
             border-radius: 20px;
-            background-color: #f1f1f1;
-            border-color: #f1f1f1;
             padding: 15px;
             margin-right: 20px;
             width: 335px;
-            color: #4D774E;
             margin-bottom: 2rem;
             display: inline-table;
 
@@ -107,7 +103,7 @@
             margin-right: 0;
         }
         .collapse-wrap{
-            border-top: 1px solid rgba(195, 213, 95, .1);
+            border-top: 1px solid;
             margin-top: 1rem;
             padding-top: 1rem;
             display: flex;
@@ -169,7 +165,6 @@
                     margin: 0;
                     display: flex;
                     height: auto;
-                    color: #000000;
 
                     .content{
                         display: flex;

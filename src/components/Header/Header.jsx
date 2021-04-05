@@ -1,17 +1,34 @@
 import React, { Component } from "react"
 import logo from "../../images/logo.svg"
+import Button from '@material-ui/core/Button';
+import Dialog from "@material-ui/core/Dialog"
+import DialogActions from "@material-ui/core/DialogActions"
+import DialogContent from "@material-ui/core/DialogContent"
+import DialogContentText from "@material-ui/core/DialogContentText"
+import DialogTitle from "@material-ui/core/DialogTitle"
 import flower from "../../images/flower.png"
 import Header from "./Header.scss"
+
 
 class HeaderMian extends Component {
   constructor(props) {
     super(props)
 
-    this.state = {}
+    this.state = {
+        isOpen:false
+    }
+  }
+
+    handleCloseHotPair = () => {
+    this.setState({
+      isOpen:false
+    })
   }
 
   render() {
+    const {isOpen} = this.state
     return (
+      <>
       <nav>
         <div className="container-fluid">
           <div className="nav-left">
@@ -25,13 +42,29 @@ class HeaderMian extends Component {
             </a>
           </div>
           <div className="nav-right">
-            <button>Connect</button>
+            <button onClick={()=>this.setState({isOpen:true})}>Connect</button>
             <a href="javascript:void(0)" className="profile">
               <img src={flower} />
             </a>
           </div>
-        </div>
+        </div>       
       </nav>
+      <Dialog open={isOpen} onClose={this.handleCloseHotPair} aria-labelledby="alert-dialog-title" aria-describedby="alert-dialog-description">
+            <DialogTitle id="alert-dialog-title">
+              {/* <img src={logocompressed} alt="" /> */}
+            </DialogTitle>
+            <DialogContent>
+              <DialogContentText id="alert-dialog-description" className="mb-0">
+                These pairs are the most viewed by DEXT users in real time, they are shown with a 1 minute delay for free users. These pairs are decided by the community visits and do not represent any investment advice or endorsement from the DEXTools team.
+              </DialogContentText>
+            </DialogContent>
+            <DialogActions>
+              <Button onClick={this.handleCloseHotPair} className="btn btn-info">
+                Close
+              </Button>
+            </DialogActions>
+          </Dialog>
+          </>
     )
   }
 }

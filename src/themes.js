@@ -5,7 +5,7 @@ export const lightTheme = {
   fontColor: "#4D774E",
   navshadow: "0 0 5px rgba(22, 74, 65, .5)",
   commoncolor: "#010415",
-  oppositcolor: "#9DC88D",
+  oppositcolor: "#C3D55F",
   buttonhover: "#1c584e",
   drawershadow: "0 7px 5px rgba(22, 74, 65, .5)",
   lightcolor: "#f1f1f1",

@@ -12,7 +12,6 @@
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 1.5rem;
-        color: #010415;
     }
     .card-wrap{
         display: flex;
@@ -20,12 +19,9 @@
     
         .card{
             border-radius: 20px;
-            background-color: #f1f1f1;
-            border-color: #f1f1f1;
             padding: 15px;
             margin-right: 20px;
             width: 335px;
-            color: #010415;
             margin-bottom: 2rem;
             font-weight: normal;
 
@@ -55,8 +51,6 @@
                     align-items: center;
                     justify-content: center;
                     border-radius: 50%;
-                    background-color: #010415;
-                    color: #ffffff;
                     line-height: 25px;
                 }
             }
@@ -65,7 +59,6 @@
 
                 .progress-bar{
                     border-radius: 4px;
-                    background-color: #ffffff;
                     color: #4D774E;
                 }
                 small{
@@ -78,7 +71,7 @@
 
                     .content{
                         padding: 7px 0;
-                        border-top: 1px solid rgba(195, 213, 95, .1);
+                        border-top: 1px solid;
                         display: flex;
                         justify-content: space-between;
                         font-size: 14px;
@@ -107,6 +100,7 @@
                 }
                 button:hover{
                     background-color: #1c584e;
+                    border-color: #1c584e;
                 }
             }
         }

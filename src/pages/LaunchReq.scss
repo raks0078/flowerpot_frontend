@@ -13,8 +13,6 @@
     h1{
         font-size: 24px;
         font-weight: bold;
-        margin-bottom: 1.5rem;
-        color: #010415;
     }
     p{
         color: #707070;
@@ -28,9 +26,6 @@
 
             .form-control{
                 border-radius: 20px;
-                background-color: #f1f1f1;
-                border-color: #f1f1f1;
-                color: #010415;
                 padding: 15px;
                 font-size: 15px;
                 height: 45px;
@@ -61,6 +56,7 @@
             }
             button:hover{
                 background-color: #1c584e;
+                border-color: #1c584e;
             }
         }
     }

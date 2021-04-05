@@ -12,16 +12,12 @@
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 1.5rem;
-        color: #010415;
     }
     .card{
         border-radius: 20px;
-        background-color: #f1f1f1;
-        border-color: #f1f1f1;
         padding: 15px;
         margin-right: 20px;
         width: 436px;
-        color: #010415;
         margin-bottom: 2rem;
         margin: auto;
         margin-right: 40%;
@@ -30,7 +26,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid rgba(195, 213, 95, 0.1);
+            border-bottom: 1px solid;
             padding-bottom: 1rem;
 
             .card-head-left{
@@ -59,6 +55,7 @@
                 }
                 button:hover{
                     background-color: #1c584e;
+                    border-color: #1c584e;
                 }
             }
             .card-head-right{
@@ -80,10 +77,6 @@
             .liquidity{
                 display: flex;
                 justify-content: space-between;
-
-                svg{
-                    color: #010415;
-                }
             }
             .opac-text{
                 opacity: .3;

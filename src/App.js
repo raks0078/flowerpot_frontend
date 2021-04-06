@@ -13,6 +13,9 @@ import Farms from "./pages/Farms"
 import TierList from "./pages/TierList"
 import Exchange from "./pages/Exchange"
 import LaunchReq from "./pages/LaunchReq"
+import flowersbackground from "./images/flowers-bg.png"
+import stageOne from "./images/stage-1.png"
+import "./App.css"
 
 const StyledDiv = styled.div`
   color: ${(props) => props.theme.fontColor};
@@ -34,6 +37,12 @@ const App = () => {
           <Drawer themeToggler={handleThemeToggle} theme={theme} />
             <Switch>
               <div className="content-right">
+              <div className="flowers-bg">
+                <img src={flowersbackground} />
+              </div>
+              <div className="leaves-img">
+                <img src={stageOne} />
+              </div>
               <Route exact path="/launchpad" component={() => <Launchpad theme={theme} />} />
               <Route exact path="/pools" component={() => <Pools theme={theme} />} />
               <Route exact path="/ifo" component={() => <Ifo theme={theme} />} />

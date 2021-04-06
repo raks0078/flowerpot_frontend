@@ -1,0 +1,14 @@
+.flowers-bg img{
+    position: fixed;
+    top: 70px;
+    height: 100vh;
+    left: 250px;
+    z-index: -1;
+}
+.leaves-img img{
+        position: fixed;
+        top: 70px;
+        height: 100vh;
+        right: -130px;
+        z-index: -1;
+}

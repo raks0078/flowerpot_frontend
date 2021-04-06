@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import stageOne from "../images/stage-1.png"
 import flower from "../images/flower.png"
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import "./Launchpad.scss"
@@ -7,9 +6,6 @@ class Launchpad extends Component {
   render() {
     return (
       <>
-      <div className="launchpad-img">
-        <img src={stageOne} />
-      </div>
       <div className="launchpad-content">
         <h1>Launchpad</h1>
         <div className="card-wrap">

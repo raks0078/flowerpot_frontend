@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import flower from "../images/flower.png"
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown"
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import sprinkler from "../images/hand-sprinkler.png"
 import "./Ifo.scss"
 class Ifo extends Component {
   render() {
@@ -107,13 +108,11 @@ class Ifo extends Component {
             <button>Read More</button>
           </div>
           <div className="img-wrap">
-            <AccountCircleIcon />
+            <img src={sprinkler} />
           </div>
         </div>
         <div className="d-flex bottom-wrap last-bottom-wrap">
-        <div className="img-wrap">
-            <AccountCircleIcon />
-          </div>
+        <div className="img-wrap"></div>
           <div className="content-wrap">
             <h1 className="mb-1p2">Want to launch your own IFO?</h1>
             <p>Launch your project with PancakeSwap, Binance Smart Chain’s most-used AMM project and liquidity provider, to bring your token directly to the most active and rapidly growing community on BSC.</p>

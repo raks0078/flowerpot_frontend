@@ -15,6 +15,7 @@ import Exchange from "./pages/Exchange"
 import LaunchReq from "./pages/LaunchReq"
 import flowersbackground from "./images/flowers-bg.png"
 import stageOne from "./images/stage-1.png"
+import stageOneDark from "./images/stage-1-dark.png"
 import "./App.css"
 
 const StyledDiv = styled.div`
@@ -35,14 +36,15 @@ const App = () => {
         <Header theme={theme} />
         <div className="d-flex main-content">
           <Drawer themeToggler={handleThemeToggle} theme={theme} />
-            <Switch>
-              <div className="content-right">
+          <Switch>
+            <div className="content-right">
               <div className="flowers-bg">
                 <img src={flowersbackground} />
               </div>
               <div className="leaves-img">
-                <img src={stageOne} />
+                <img src={theme === "light" ? stageOne : stageOneDark} />
               </div>
+              <Route exact path="/" component={() => <Launchpad theme={theme} />} />
               <Route exact path="/launchpad" component={() => <Launchpad theme={theme} />} />
               <Route exact path="/pools" component={() => <Pools theme={theme} />} />
               <Route exact path="/ifo" component={() => <Ifo theme={theme} />} />
@@ -52,8 +54,8 @@ const App = () => {
               <Route exact path="/tierlist" component={() => <TierList theme={theme} />} />
               <Route exact path="/exchange" component={() => <Exchange theme={theme} />} />
               <Route exact path="/launchreq" component={() => <LaunchReq theme={theme} />} />
-              </div>
-            </Switch>
+            </div>
+          </Switch>
         </div>
       </StyledDiv>
     </ThemeProvider>

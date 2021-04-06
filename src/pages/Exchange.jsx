@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import stageOne from "../images/stage-1.png"
 import bnb from "../images/bnb.png"
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown"
 import "./Exchange.scss"
@@ -7,9 +6,6 @@ class Exchange extends Component {
   render() {
     return (
       <>
-      <div className="exchange-img">
-        <img src={stageOne} />
-      </div>
       <div className="exchange-content">
         <h1>Exchange</h1>
         <div className="card">

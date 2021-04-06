@@ -1,14 +1,10 @@
 import React, { Component } from 'react'
-import stageOne from "../images/stage-1.png"
 import "./LaunchReq.scss"
 class LaunchReq extends Component {
   render() {
     return (
       <>
-      <div className="launchreq-img">
-        <img src={stageOne} />
-      </div>
-      <div className="launchreq-content">
+     <div className="launchreq-content">
         <h1>Token/Presale</h1>
         <p>Do you have an ongoing project or an idea for a new one? Message us, we
 would love to hear from you!</p>

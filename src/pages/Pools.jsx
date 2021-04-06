@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import stageOne from "../images/stage-1.png"
 import flower from "../images/flower.png"
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown"
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
@@ -8,9 +7,6 @@ class Pools extends Component {
   render() {
     return (
       <>
-      <div className="pools-img">
-        <img src={stageOne} />
-      </div>
       <div className="pools-content">
         <h1>Pools
           <small>

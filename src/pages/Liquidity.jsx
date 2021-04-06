@@ -1,13 +1,9 @@
 import React, { Component } from 'react'
-import stageOne from "../images/stage-1.png"
 import "./Liquidity.scss"
 class Liquidity extends Component {
   render() {
     return (
       <>
-      <div className="liquidity-img">
-        <img src={stageOne} />
-      </div>
       <div className="liquidity-content">
         <h1>Liquidity</h1>
         <div className="card">

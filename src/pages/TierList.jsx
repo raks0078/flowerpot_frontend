@@ -1,13 +1,9 @@
 import React, { Component } from 'react'
-import stageOne from "../images/stage-1.png"
 import "./TierList.scss"
 class TierList extends Component {
   render() {
     return (
       <>
-      <div className="tierlist-img">
-        <img src={stageOne} />
-      </div>
       <div className="tierlist-content">
         <h1>Tierlist</h1>
         <div className="card-wrap">

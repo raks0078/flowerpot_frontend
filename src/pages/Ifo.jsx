@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import stageOne from "../images/stage-1.png"
 import flower from "../images/flower.png"
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown"
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
@@ -8,9 +7,6 @@ class Ifo extends Component {
   render() {
     return (
       <>
-      <div className="ifo-img">
-        <img src={stageOne} />
-      </div>
       <div className="ifo-content">
         <h1>IFO: Initial Farm Offerings
           <small>Buy new tokens with a brand new token sale model.</small>

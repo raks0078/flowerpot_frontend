@@ -182,5 +182,17 @@ export const GlobalStyle = createGlobalStyle`
   background-color: ${(props) => props.theme.body};
   border-color: ${(props) => props.theme.body};
 }
+.MuiPaper-root{
+  background-color: ${(props) => props.theme.lightcolor} !important;
+}
+.MuiDialogTitle-root h2, 
+.MuiDialogTitle-root h2 svg{
+  color: ${(props) => props.theme.commoncolor};
+}
+.MuiDialogContent-root .wallet-wrap a{
+  background-color: ${(props) => props.theme.body};
+  border-color: ${(props) => props.theme.body};
+  color: ${(props) => props.theme.commoncolor};
+}
 
 `

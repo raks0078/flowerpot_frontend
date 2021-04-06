@@ -86,3 +86,48 @@ button{
 .mb-1p2{
   margin-bottom: 1.2rem !important;
 }
+.MuiDialog-paper{
+  width: auto;
+  min-width: 360px;
+  max-width: 360px !important;
+  margin: 0 !important;
+  border-radius: 20px !important;
+  padding: 15px;
+}
+.MuiDialogTitle-root{ 
+  padding: 0 15px 20px !important; 
+}
+.MuiDialogTitle-root h2{
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+.MuiDialogTitle-root h2 button{
+    background: none;
+    border: none;
+}
+.MuiDialogContent-root{ padding: 0 15px 15px !important; }
+.MuiDialogContent-root .wallet-wrap a{
+  border-radius: 20px;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.MuiDialogContent-root .wallet-wrap a:hover{ opacity: .8; }
+.MuiDialog-paperScrollPaper{ max-height: calc(100% - 15px) !important; }
+.MuiTypography-body1{ font-size: 14px !important; }
+.MuiDialogContent-root .wallet-wrap{ margin-bottom: 1.5rem; }
+.MuiDialogContent-root .learnmore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4D774E;
+}
+.MuiDialogContent-root .learnmore svg{ margin-right: 5px; }
+.MuiDialogContent-root .learnmore svg path{ fill: #4D774E; }

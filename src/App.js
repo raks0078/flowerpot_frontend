@@ -16,6 +16,10 @@ import LaunchReq from "./pages/LaunchReq"
 import flowersbackground from "./images/flowers-bg.png"
 import stageOne from "./images/stage-1.png"
 import stageOneDark from "./images/stage-1-dark.png"
+import basket from "./images/basket.png"
+import sprinkler from "./images/hand-sprinkler.png"
+import basketdark from "./images/basket-dark.png"
+import sprinklerdark from "./images/hand-sprinkler-dark.png"
 import "./App.css"
 
 const StyledDiv = styled.div`
@@ -42,7 +46,9 @@ const App = () => {
                 <img src={flowersbackground} />
               </div>
               <div className="leaves-img">
-                <img src={theme === "light" ? stageOne : stageOneDark} />
+                {theme === "light" ? <React.Fragment><img src={basket} className="basket" />
+                <img src={sprinkler} className="sprinkler" /></React.Fragment> : <React.Fragment><img src={basketdark} className="basket" />
+                <img src={sprinklerdark} className="sprinkler" /></React.Fragment>}
               </div>
               <Route exact path="/" component={() => <Launchpad theme={theme} />} />
               <Route exact path="/launchpad" component={() => <Launchpad theme={theme} />} />

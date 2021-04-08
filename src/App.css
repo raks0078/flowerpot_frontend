@@ -5,10 +5,17 @@
     left: 250px;
     z-index: -1;
 }
-.leaves-img img{
+.leaves-img img.basket{
         position: fixed;
-        top: 70px;
-        height: 100vh;
-        right: -130px;
+        bottom: -22px;
+        height: 55vh;
+        right: 0px;
         z-index: -1;
+}
+.leaves-img img.sprinkler{
+    position: fixed;
+    top: -22px;
+    height: 55vh;
+    right: -115px;
+    z-index: -1;
 }

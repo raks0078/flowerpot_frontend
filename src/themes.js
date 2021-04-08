@@ -41,7 +41,7 @@ export const GlobalStyle = createGlobalStyle`
           box-shadow: ${(props) => props.theme.navshadow};
         }
         nav .container-fluid .nav-left button svg path {
-          fill: ${(props) => props.theme.fontColor};
+          fill: ${(props) => props.theme.greencolor};
       }
       nav .container-fluid .nav-left a {
         color: ${(props) => props.theme.commoncolor};
@@ -59,16 +59,17 @@ export const GlobalStyle = createGlobalStyle`
       box-shadow: ${(props) => props.theme.drawershadow};
     }
     .drawer ul li a span svg path {
-      fill: ${(props) => props.theme.fontColor};
+      fill: ${(props) => props.theme.greencolor};
   }
   .drawer ul .collapse, .drawer ul .collapsing{
     background-color: ${(props) => props.theme.lightcolor};
   }
   .drawer ul li a.active {
-    border-left-color: ${(props) => props.theme.buttonhover};
+    background-color: ${(props) => props.theme.fontColor};
+    color: ${(props) => props.theme.greencolor};
 }
 .drawer ul .theme-mode a .toggle-icon-changer .theme-icon-left{
-  color: ${(props) => props.theme.fontColor};
+  color: ${(props) => props.theme.greencolor};
 }
 .drawer .aside-bottom .social a svg path {
   fill: ${(props) => props.theme.fontColor};
@@ -79,7 +80,7 @@ export const GlobalStyle = createGlobalStyle`
   background-color: ${(props) => props.theme.lightcolor};
 }
 .drawer ul li a{
-  color: ${(props) => props.theme.commoncolor};
+  color: ${(props) => props.theme.greencolor};
 }
 .launchpad-content .card-wrap .card, 
 .tierlist-content .card-wrap .card, 

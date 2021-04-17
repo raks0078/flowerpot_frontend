@@ -53,12 +53,12 @@ const App = () => {
               <div className="leaves-img">
                 {theme === "light" ? (
                   <React.Fragment>
-                    <img src={basket} className="basket" />
+                    {/* <img src={basket} className="basket" /> */}
                     <img src={sprinkler} className="sprinkler" />
                   </React.Fragment>
                 ) : (
                   <React.Fragment>
-                    <img src={basketdark} className="basket" />
+                    {/* <img src={basketdark} className="basket" /> */}
                     <img src={sprinklerdark} className="sprinkler" />
                   </React.Fragment>
                 )}

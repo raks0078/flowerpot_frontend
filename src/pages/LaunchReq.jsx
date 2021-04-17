@@ -6,8 +6,17 @@ class LaunchReq extends Component {
       <>
      <div className="launchreq-content">
         <h1>Token/Presale</h1>
-        <p>Do you have an ongoing project or an idea for a new one? Message us, we
-would love to hear from you!</p>
+        <p>
+          <b>About</b>
+        </p>
+        <p>We at Flowerpot Launchpad  provide a platform that helps bringing investors and great projects together. We look for projects which bring value to the BSC network because real value is in the long run the biggest factor for community and price growth.<br/><br/>
+
+Looking for outside project is not the only thing we are working on. Being a driving force in innovation and bringing adaption to non-crypto users is our mid to end goal. Educating new Developers and helping them find good ideas for projects will be a major part in our efforts. So, you will see a lot of projects that are actively developed with our help.<br/><br/>
+
+Our launchpad is the first step in that direction. We will offer a fair start for our community. If you are holding $Flower tokens you will be able to invest in the IDO of good projects that will be secured from bots buying up the supply in seconds. You can have a look at our Roadmap (https:/flowerpot.finance/Roadmap) to see where we are right now.<br/><br/>
+
+Join us on our social media platforms (Telegram is the most important one) to be updated on how things are going so far.
+</p>
         <form>
           <div className="form-group">
             <input type="text" className="form-control" placeholder="Project Name" />

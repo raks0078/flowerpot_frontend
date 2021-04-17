@@ -29,26 +29,39 @@ const StyledDiv = styled.div`
 
 const App = () => {
   const [theme, setTheme] = useState("light")
+  const [drawer, setDrawer] = useState(false)
 
   const handleThemeToggle = () => {
     theme === "light" ? setTheme("dark") : setTheme("light")
+  }
+
+  const drawerhandler = (getDrawer) => {
+    setDrawer(getDrawer)
   }
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyle />
       <StyledDiv>
-        <Header theme={theme} />
+        <Header theme={theme} drawerhandler={drawerhandler} drawer={drawer} />
         <div className="d-flex main-content">
-          <Drawer themeToggler={handleThemeToggle} theme={theme} />
+          <Drawer themeToggler={handleThemeToggle} theme={theme} drawer={drawer} />
           <Switch>
             <div className="content-right">
               <div className="flowers-bg">
                 <img src={flowersbackground} />
               </div>
               <div className="leaves-img">
-                {theme === "light" ? <React.Fragment><img src={basket} className="basket" />
-                <img src={sprinkler} className="sprinkler" /></React.Fragment> : <React.Fragment><img src={basketdark} className="basket" />
-                <img src={sprinklerdark} className="sprinkler" /></React.Fragment>}
+                {theme === "light" ? (
+                  <React.Fragment>
+                    <img src={basket} className="basket" />
+                    <img src={sprinkler} className="sprinkler" />
+                  </React.Fragment>
+                ) : (
+                  <React.Fragment>
+                    <img src={basketdark} className="basket" />
+                    <img src={sprinklerdark} className="sprinkler" />
+                  </React.Fragment>
+                )}
               </div>
               <Route exact path="/" component={() => <Launchpad theme={theme} />} />
               <Route exact path="/launchpad" component={() => <Launchpad theme={theme} />} />

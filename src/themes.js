@@ -36,12 +36,13 @@ export const GlobalStyle = createGlobalStyle`
     body {
             background-color: ${(props) => props.theme.body};
             font-weight: ${(props) => props.theme.fontweight};
+            color: ${(props) => props.theme.commoncolor} !important;
         }
         nav{
           box-shadow: ${(props) => props.theme.navshadow};
         }
         nav .container-fluid .nav-left button svg path {
-          fill: ${(props) => props.theme.greencolor};
+          fill: ${(props) => props.theme.commoncolor};
       }
       nav .container-fluid .nav-left a {
         color: ${(props) => props.theme.commoncolor};
@@ -59,20 +60,22 @@ export const GlobalStyle = createGlobalStyle`
       box-shadow: ${(props) => props.theme.drawershadow};
     }
     .drawer ul li a span svg path {
-      fill: ${(props) => props.theme.greencolor};
+      fill: ${(props) => props.theme.commoncolor};
   }
   .drawer ul .collapse, .drawer ul .collapsing{
     background-color: ${(props) => props.theme.lightcolor};
   }
   .drawer ul li a.active {
-    background-color: ${(props) => props.theme.fontColor};
-    color: ${(props) => props.theme.greencolor};
+    background-color: ${(props) => props.theme.commoncolor};
+    color: ${(props) => props.theme.oppositecommoncolor};
 }
-.drawer ul .theme-mode a .toggle-icon-changer .theme-icon-left{
-  color: ${(props) => props.theme.greencolor};
+.drawer ul .theme-mode a .toggle-icon-changer .theme-icon-left, 
+.drawer ul .theme-mode a .toggle-icon-changer .theme-icon-right, 
+.drawer ul .theme-mode a .toggle-icon-changer .theme-separator{
+  color: ${(props) => props.theme.commoncolor};
 }
 .drawer .aside-bottom .social a svg path {
-  fill: ${(props) => props.theme.fontColor};
+  fill: ${(props) => props.theme.commoncolor};
 }
 .farms-content .tool-wrap, 
 .pools-content .tool-wrap, 
@@ -80,7 +83,7 @@ export const GlobalStyle = createGlobalStyle`
   background-color: ${(props) => props.theme.lightcolor};
 }
 .drawer ul li a{
-  color: ${(props) => props.theme.greencolor};
+  color: ${(props) => props.theme.commoncolor};
 }
 .launchpad-content .card-wrap .card, 
 .tierlist-content .card-wrap .card, 
@@ -106,7 +109,8 @@ export const GlobalStyle = createGlobalStyle`
 .pools-content .card-wrap .card .card-body .table-wrap .content, 
 .pools-content .card-wrap .collapse-wrap, 
 .collectible-content .card-wrap .collapse-wrap, 
-.ifo-content .card-wrap .collapse-wrap{
+.ifo-content .card-wrap .collapse-wrap, 
+.tierlist-content .card-wrap .card .card-foot{
   border-top-color: ${(props) => props.theme.borderlightcolor};
 }
 .launchreq-content form .form-group .form-control{
@@ -131,7 +135,9 @@ export const GlobalStyle = createGlobalStyle`
 .farms-content h1, 
 .pools-content h1, 
 .collectible-content h1, 
-.ifo-content h1{
+.ifo-content h1, 
+.ifo-content ul, 
+.ifo-content p{
   color: ${(props) => props.theme.commoncolor};
 }
 .exchange-content .card .card-head, 
@@ -142,10 +148,12 @@ export const GlobalStyle = createGlobalStyle`
 .exchange-content .card .card-body .content, 
 .ifo-content .card-wrap .card .card-banner{
   background-color: ${(props) => props.theme.body};
+  color: ${(props) => props.theme.commoncolor};
 }
 .tierlist-content .card-wrap .card .card-body .table-wrap .content span{
   background-color: ${(props) => props.theme.body};
   border-color: ${(props) => props.theme.body};
+  color: ${(props) => props.theme.commoncolor};
 }
 .liquidity-content .card .card-body .liquidity svg, 
 .farms-content .tool-wrap, 
@@ -171,6 +179,8 @@ export const GlobalStyle = createGlobalStyle`
 .pools-content .tool-wrap .tool-left .btn-group .btn.active, 
 .ifo-content .tool-wrap .tool-left .btn-group .btn.active{
   border-color: ${(props) => props.theme.body};
+  color: ${(props) => props.theme.oppositecommoncolor};
+  background-color: ${(props) => props.theme.commoncolor};
 }
 .farms-content .tool-wrap .tool-right .form-group .form-control{
   color: ${(props) => props.theme.themetextcolor};
@@ -194,6 +204,42 @@ export const GlobalStyle = createGlobalStyle`
   background-color: ${(props) => props.theme.body};
   border-color: ${(props) => props.theme.body};
   color: ${(props) => props.theme.commoncolor};
+}
+button{
+  background-color: ${(props) => props.theme.commoncolor} !important;
+  color: ${(props) => props.theme.oppositecommoncolor} !important;
+  border-color: ${(props) => props.theme.commoncolor} !important;
+}
+.tierlist-content .card-wrap .card .card-foot span{
+  background-color: ${(props) => props.theme.commoncolor};
+  color: ${(props) => props.theme.oppositecommoncolor};
+  border-color: ${(props) => props.theme.commoncolor};
+}
+.exchange-content .card .card-head .card-head-right button, 
+.liquidity-content .card .card-head .card-head-right button{
+  color: ${(props) => props.theme.commoncolor} !important;
+}
+a, 
+a:hover{
+  color: ${(props) => props.theme.commoncolor};
+}
+.drawer ul li a.active span svg path{
+  fill: ${(props) => props.theme.oppositecommoncolor};
+}
+.exchange-content .card .card-head .card-head-right button svg path, 
+.liquidity-content .card .card-head .card-head-right button svg path, 
+.farms-content .card-wrap .card .card-head .core svg path, 
+.farms-content .card-wrap .card .card-head span svg path, 
+.pools-content .card-wrap .collapse-wrap .core svg path, 
+.farms-content .card-wrap .card .card-body .table-wrap .content svg, 
+.farms-content .card-wrap .collapse-wrap .collapse .card a svg, 
+.farms-content .card-wrap .collapse-wrap .collapsing .card a svg, 
+.ifo-content .card-wrap .collapse-wrap .collapse .card a svg, 
+.ifo-content .card-wrap .collapse-wrap .collapsing .card a svg{
+  fill: ${(props) => props.theme.commoncolor} !important;
+}
+.exchange-content .card .card-body button svg path{
+  fill: ${(props) => props.theme.oppositecommoncolor} !important;
 }
 
 `

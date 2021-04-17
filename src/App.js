@@ -46,8 +46,10 @@ const App = () => {
                 <img src={flowersbackground} />
               </div>
               <div className="leaves-img">
-                {theme === "light" ? <React.Fragment><img src={basket} className="basket" />
-                <img src={sprinkler} className="sprinkler" /></React.Fragment> : <React.Fragment><img src={basketdark} className="basket" />
+                {theme === "light" ? <React.Fragment>
+                  {/* <img src={basket} className="basket" /> */}
+                <img src={sprinkler} className="sprinkler" /></React.Fragment> : <React.Fragment>
+                  {/* <img src={basketdark} className="basket" /> */}
                 <img src={sprinklerdark} className="sprinkler" /></React.Fragment>}
               </div>
               <Route exact path="/" component={() => <Launchpad theme={theme} />} />

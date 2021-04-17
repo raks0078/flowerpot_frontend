@@ -26,17 +26,10 @@
 
         .tool-left{
             button{
-                background-color: transparent;
+                background-color: transparent !important;
                 border: none;
                 height: 32px;
                 width: 32px;
-            }
-            button.active{
-                svg{
-                    path{
-                        fill: #4D774E;
-                    }
-                }
             }
             .form-check{
                 padding-left: 15px;
@@ -76,9 +69,7 @@
                     color: #707070;
                 }
                 .btn.active{
-                    background-color: #4D774E;
                     border-radius: 100px;
-                    color: #C3D55F;
                     border: 1px solid;
                 }
             }
@@ -130,13 +121,11 @@
                 svg{
                     width: 35px;
                     height: 35px;
-                    color: #4D774E;
                 }
                 h5{
                     margin: 0;
                     font-weight: bold;
                     margin-bottom: 5px;
-                    color: #4D774E;
                 }
                 span{
                     min-width: 50px;
@@ -145,23 +134,17 @@
                     align-items: center;
                     justify-content: center;
                     border-radius: 100px;
-                    color: #4D774E;
                     line-height: 25px;
                     padding: 10px;
                     margin-left: 5px;
                 }
                 .core{
                     background-color: #ffffff;
-                    color: #4D774E;
                     border: 1px solid #ffffff;
 
                     svg{
                         margin-right: 5px;
                         width: 15px;
-
-                        path{
-                            fill: #4D774E;
-                        }
                     }
                 }
                 .right{
@@ -186,10 +169,6 @@
 
                         svg{
                             margin-right: 5px;
-
-                            path{
-                                fill: #4D774E;
-                            }
                         }
                     }
                     .content-bottom{
@@ -275,8 +254,6 @@
             flex-direction: column;
 
             a{
-                color: #4D774E;
-
                 svg{
                     font-size: 17px;
                 }
@@ -314,10 +291,6 @@
 
                         svg{
                             margin-left: 5px;
-
-                            path{
-                                fill: #4D774E;
-                            }
                         }
                     }
                 }

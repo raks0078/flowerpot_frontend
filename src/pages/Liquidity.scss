@@ -27,17 +27,14 @@
                 h5{
                     margin-right: 20px;
                     font-weight: bold;
-                    color: #4D774E;
                 }
                 button{
-                    background-color: #4D774E;
-                    color: #C3D55F;
                     height: 45px;
                     min-width: 100px;
                     align-items: center;
                     justify-content: center;
                     border-radius: 100px;
-                    border: 1px solid #4D774E;
+                    border: 1px solid;
                     padding: 0 15px;
                     line-height: 45px;
                     text-transform: uppercase;
@@ -51,14 +48,8 @@
             }
             .card-head-right{
                 button{
-                    background-color: transparent;
+                    background-color: transparent !important;
                     border: none;
-
-                    svg{
-                        path{
-                            fill: #4D774E;
-                        }
-                    }
                 }
             }
         }
@@ -93,7 +84,6 @@
                 margin: 1rem 0;
 
                 a{
-                    color: #4D774E;
                     padding-left: 3px;
                 }
             }
